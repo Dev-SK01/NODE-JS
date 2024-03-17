@@ -1,0 +1,17 @@
+--------------------------- NODE JS FILE SYSTEM -------------
+
+1. It provides all the fils system handling function and methods like Read ,Write etc..
+
+2. import or use require(node:fs) --> imports the core module for FILESYSTEM.
+  reads file Asynchronously 
+
+3. SYNTAX For reading 
+  readFile('file Location' , 'encoding -utf8' , (err , data) =>{
+    if(err) throw err
+    console.log(data) --> actual data as buffer data. toString() --> convert to actual data
+});
+
+4. Each os has own FILESYSTEM so handle those file system operation errors use path core module
+
+   SYNTAX
+fs.readFile(path.join(__dirname , 'location' , 'location'),()=>()) 

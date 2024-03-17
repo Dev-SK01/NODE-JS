@@ -1,0 +1,11 @@
+----------------------------- Handling Exceptions IN Node JS ------------
+
+1. FILESYSTEM exceptions handling in nodeJS
+
+2.SYNTAX 
+
+  process.on('ExceptionName' , err => {
+    console.error(err);
+    process.exit(1) --> is error occurs prints the error and exit
+  })
+  

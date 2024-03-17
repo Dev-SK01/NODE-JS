@@ -25,7 +25,7 @@
    --> basename , extname , dirname, parse --> gives complete object of the file path
 
 ---------------- Exporting In Node Js ------------------
-1.module.exports = {export function , objects ,variables }
+1.module.exports = {export function , objects ,variables } || exports.function
 
 2.To import use require (export function , object , variables) || use .mjs
   to use ES6 modules , if we import ES6 need to specify the extension of the file.
