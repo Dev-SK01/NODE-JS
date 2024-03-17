@@ -23,6 +23,7 @@
 
  3.PATH --> Give the function and object for the path of the file 
    --> basename , extname , dirname, parse --> gives complete object of the file path
+   --> join() ==> joins the path
 
 ---------------- Exporting In Node Js ------------------
 1.module.exports = {export function , objects ,variables } || exports.function

@@ -8,4 +8,12 @@
     console.error(err);
     process.exit(1) --> is error occurs prints the error and exit
   })
-  
+
+3. we can use JS try Catch methos to handle the error
+
+SYNTAX 
+  try{
+
+  }catch(err){
+  //logic
+  }  

@@ -11,7 +11,7 @@
     console.log(data) --> actual data as buffer data. toString() --> convert to actual data
 });
 
-4. Each os has own FILESYSTEM so handle those file system operation errors use path core module
+4. Each OS has own FILESYSTEM so handle those file system operation errors use path core module
 
    SYNTAX
 fs.readFile(path.join(__dirname , 'location' , 'location'),()=>()) 
