@@ -1,0 +1,33 @@
+---------------------------- BASIC OF NODE JS ----------------------
+1.Node JS is Runtime Environment for Javascript.It Provides a Place to Run the Javascript
+  It a Cross Platform Which mean we can run this on any platform.
+
+2.It Uses V8 Engine For A JIT compiler To Provide the Environment.
+
+ ------------------------- Differences ----------------------
+ 1. there is no window object in Node.
+ 
+ 2. there is global object in node js it provide the details like window but not similar.
+
+ 3. we can run node in terminal using node __filename
+
+ 4.Node 18.16.0 Not support ES6 Support.
+
+ 5.To import modules use require('module-name)
+
+ ------------------------- Node Core Modules ------------------
+
+ 1.__dirname . __filename like this some of the default variables are available in NODE
+
+ 2. OS --> give the control of the  OS & provide The function and Objects.
+
+ 3.PATH --> Give the function and object for the path of the file 
+   --> basename , extname , dirname, parse --> gives complete object of the file path
+
+---------------- Exporting In Node Js ------------------
+1.module.exports = {export function , objects ,variables }
+
+2.To import use require (export function , object , variables) || use .mjs
+  to use ES6 modules , if we import ES6 need to specify the extension of the file.
+
+3. .mjs used to use ES6 modules in node to run mention the extension
