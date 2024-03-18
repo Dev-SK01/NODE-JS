@@ -2,16 +2,77 @@
 
 1. It provides all the fils system handling function and methods like Read ,Write etc..
 
-2. import or use require(node:fs) --> imports the core module for FILESYSTEM.
+2.import or use require(node:fs) --> imports the core module for FILESYSTEM.
   reads file Asynchronously 
 
-3. SYNTAX For reading 
+3.Each OS has own FILESYSTEM so handle those file system operation errors use path core module
+
+ -------------------- SYNTAX For reading-----------------------
+
   readFile('file Location' , 'encoding -utf8' , (err , data) =>{
     if(err) throw err
     console.log(data) --> actual data as buffer data. toString() --> convert to actual data
 });
 
-4. Each OS has own FILESYSTEM so handle those file system operation errors use path core module
+------------------- SYNTAX reading file All OS ---------------
 
-   SYNTAX
 fs.readFile(path.join(__dirname , 'location' , 'location'),()=>()) 
+
+----------------- Writing the files Using FILESYSTEM -----------------
+
+1. fs.writeFile('filename.extension' , 'content of the file' , (err) =>{
+  if(err) throw err
+  console.log('Complete Message')
+});
+
+2.It writes the file to your desired location
+
+------------------------ Update the files using FILESYSTEM --------------
+
+1.fs.appendFile('filename.extension' , 'Update content' , (err) =>{
+  if(err) throw err
+  console.log('Complete Message')
+});
+
+2.It run Asynchronously so we need to call the append method inside the callback funciton of
+  relative writeFile.
+
+3. we can create a file using append .this also possible
+
+----------------------- Rename the File using FILESYSTEM -------------------
+
+1. fs.rename('existing file location with filename' ,'existing file location with rename file name'
+    (err){
+      if(err) throw err ;
+      cosole.log('rename Completed');
+    }
+    )
+2. this also work Asynchronously so we need call like the update method.
+
+3.Its leads to callbackhell .to avoid this we need use fs promises.
+
+
+-------------------------- Delete File Using FILESYSTEM ------------------
+1. fs.unlink('delete File Location')
+
+2.it deletes the file .
+
+-------------------- FILESYSTEM Promises --------------------
+
+1.fs promises used to help us to implement the async await functionaity for file operations
+
+2. Sytax fs promises
+
+const filePromise = require(fs).promises --> used to implement async
+
+cosnt fileOperations = async () =>{
+  try{
+      const fileStatus = await filePromise.readFile(path.join('path') ,'encoding' ,);
+      console.log(fileStatus);
+
+      //write the all file operations with promises
+  }catch(err){
+    console.error(err)
+  }
+ 
+}

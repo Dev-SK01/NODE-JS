@@ -1,0 +1,14 @@
+---------------------------- Big File Handling  With Stream ----------------
+
+1.Stream is used to read or write big file and data . it read and write the file smal pieces that 
+  is called Stream
+
+syntax
+
+const fs = require('fs')
+const path = require('path')
+const ReadStream = fs.createReadStream('file location , name' , {encoding : 'type'});
+
+cosnt writeStream = fs.createWriteStream('write file location  ,name')
+
+ReadStream.pipe(writeStream) --> readfile and write the file.

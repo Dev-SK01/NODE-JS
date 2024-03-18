@@ -9,11 +9,11 @@
  
  2. there is global object in node js it provide the details like window but not similar.
 
- 3. we can run node in terminal using node __filename
+ 3. we can run node in terminal using node filename
 
  4.Node 18.16.0 Not support ES6 Support.
 
- 5.To import modules use require('module-name)
+ 5.To import modules use require('module-name) | ES6 import export
 
  ------------------------- Node Core Modules ------------------
 
@@ -26,6 +26,7 @@
    --> join() ==> joins the path
 
 ---------------- Exporting In Node Js ------------------
+
 1.module.exports = {export function , objects ,variables } || exports.function
 
 2.To import use require (export function , object , variables) || use .mjs

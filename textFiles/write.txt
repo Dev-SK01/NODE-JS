@@ -1,0 +1,2 @@
+console.log('File Writed')
+console.log('File appended');
