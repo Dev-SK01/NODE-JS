@@ -76,3 +76,20 @@ cosnt fileOperations = async () =>{
   }
  
 }
+
+
+------------------------------ create & remove Directory -------------------
+1.It create a new directory in your desired location
+
+SYNTAX
+fs.mkdir('directory location' , (err)=>{
+  if (err) throw err
+  console.log('Directory Created!)
+})
+
+fs.rmdir('directory location' , (err)=>{
+  if (err) throw err
+  console.log('Directory Removed!)
+})
+
+2. fs.ExistsSync() --> used to find the director or file exist or not

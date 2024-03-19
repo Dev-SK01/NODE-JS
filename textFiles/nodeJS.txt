@@ -1,10 +1,12 @@
 ---------------------------- BASIC OF NODE JS ----------------------
+
 1.Node JS is Runtime Environment for Javascript.It Provides a Place to Run the Javascript
   It a Cross Platform Which mean we can run this on any platform.
 
 2.It Uses V8 Engine For A JIT compiler To Provide the Environment.
 
  ------------------------- Differences ----------------------
+
  1. there is no window object in Node.
  
  2. there is global object in node js it provide the details like window but not similar.
@@ -32,4 +34,7 @@
 2.To import use require (export function , object , variables) || use .mjs
   to use ES6 modules , if we import ES6 need to specify the extension of the file.
 
-3. .mjs used to use ES6 modules in node to run mention the extension
+3. .mjs used to use ES6 modules in node to run mention the extension.
+
+4. const {name : 'desiredname} = require('module') --> helps us to use the desired name of the 
+   module we use

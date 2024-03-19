@@ -1,0 +1,33 @@
+---------------------- Node Package Manager ---------------------
+
+1. NPM is a package mnager to help to use others implmented logic for your application
+
+2. Its helps us to develope Our idea faster.
+
+3.It contains lots of packages
+
+4. npmjs.com it contains the all js pckage for free
+
+5. Select papularity and maintanance of the package 
+
+----------------------- Creating NPM and Using Npm packages----------------
+
+1. npm i packagename -g --> installs the package globally means it installs your entire system
+
+2. npm init --> it initilize the node package manager in your project , 
+   creates the package.jonn in your project.
+
+3. dependencies -D --> holds your all of your node package you use in your packages. it is used
+   in production dependencies
+
+4.devdepedencies --> it only works only on the while developing the application
+
+5. NPM package version "^1.0.0" -> 
+
+^ dont update the major version but update path versions
+~ it allows only update patch versions 1.0.0
+* it allows update all version
+
+6. nodemon@1.0.0 --> install the specific version
+
+7. npm remove package-name --> removes the package.
