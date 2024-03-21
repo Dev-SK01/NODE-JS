@@ -1,0 +1,33 @@
+----------------------- BUILDING THE WEBSERVER USING NODE JS --------------
+
+1. Web server is a server that host the web files of your website and it server to the browser.
+
+2. It uses HTTP request  , browser sends the request for your website our nodejs webserver establish
+   the connection between the browser , then it sends the data of your website , website renders your website.
+
+3. It establish the TCP HTTP connection , browser sends the get request , server responded with staus code
+
+4.PORT NUMBER : It is a interface between two devices ,  in this port two device speaks each them.
+  there is 60000 ports in the server , some of the ports are reserved ports.
+
+5.
+
+------------------------------ CREATING SERVER USING NODE -------------------
+
+1. import http core module 
+
+2. const server = http.createServer((req , res)=>{
+
+}) --> creates the server and takes function as argument , request and response . are params
+
+3. request which request server receive and which respone send to request.
+
+4. server.listen(PORT , (err)=>{
+    if (err){
+        console.error(err);
+    }else{
+        console.log('Server Runnig On ' + PORT)
+    }
+}); ---> listen the request on the port and handle the error of occur.
+
+5.writeHead(statuscode , {content-type}); --> tell about the header of the http request.

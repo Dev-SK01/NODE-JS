@@ -1,0 +1,19 @@
+--------------------- EVENTEMITTER NODE JS ---------------------------------
+1. It is used log the all the events happen in our node js server.
+
+2. it a terminology it means indexing the text format of happening events on server.
+
+3. Evenet Emitter is code module fo the node  JS
+
+4. To implement event emitter imoprt events in your file
+
+SYNTAX 
+
+const Emitter = require('events') ;
+clss myEmitter extends Emitter {} --> emitter are class with emit function object
+
+myEmitter.on('eventname',(msg)=>{
+    EmitteroLogFunction(msg);
+}) ---> on function listen the event.
+
+myEmitter.emit('eventname' , message) --> emits the event ---> when we call emit.
