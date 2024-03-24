@@ -8,7 +8,7 @@
 3. It establish the TCP HTTP connection , browser sends the get request , server responded with staus code
 
 4.PORT NUMBER : It is a interface between two devices ,  in this port two device speaks each them.
-  there is 60000 ports in the server , some of the ports are reserved ports.
+  there is 63000 ports in the server , some of the ports are reserved ports.
 
 5.
 
@@ -31,3 +31,9 @@
 }); ---> listen the request on the port and handle the error of occur.
 
 5.writeHead(statuscode , {content-type}); --> tell about the header of the http request.
+
+6.write() --> writes the contenet in the header.
+
+7. we need to get the request and send correct response to the server.
+
+8. we need to handle eachtype  of request and response based on the contentType.

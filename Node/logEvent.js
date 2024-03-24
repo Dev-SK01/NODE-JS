@@ -27,3 +27,5 @@ async function logEvent(message) {
     }
     console.log(logData);
 }
+
+module.exports = {myEmitterObj} ;
